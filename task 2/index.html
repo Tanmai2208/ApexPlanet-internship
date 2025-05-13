@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Dev Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+
+    <!-- Left Section -->
+    <section class="content">
+
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+
+    </section>
+
+    <!-- Right Section -->
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>This is a responsive sidebar using CSS Grid.</p>
+    </aside>
+
+  </main>
+
+</body>
+</html>

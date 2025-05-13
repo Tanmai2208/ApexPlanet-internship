@@ -1,0 +1,107 @@
+/* Reset and Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Navigation */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .sidebar {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* To-Do List Styling */
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  #taskList button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

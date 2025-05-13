@@ -1,0 +1,21 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #2e8b57;
+  }
+  
+  img {
+    width: 200px;
+    border-radius: 8px;
+  }
+  
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
