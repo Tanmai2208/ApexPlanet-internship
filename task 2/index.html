@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web Dev Project</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 – Web Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
-
   <header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="grid-container">
-
-    <!-- Left Section -->
-    <section class="content">
-
-      <h2>Contact Form</h2>
+    <section class="form-section">
+      <h2>Contact Us</h2>
       <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <input type="submit" value="Submit">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
       </form>
-
-      <h2>To-Do List</h2>
-      <input type="text" id="taskInput" placeholder="Enter a task">
-      <button onclick="addTask()">Add</button>
-      <ul id="taskList"></ul>
-
     </section>
 
-    <!-- Right Section -->
-    <aside class="sidebar">
-      <h3>Sidebar</h3>
-      <p>This is a responsive sidebar using CSS Grid.</p>
-    </aside>
-
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Enter a task" />
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
   </main>
 
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card" data-aos="fade-up">
+        <h3>Web Development</h3>
+        <p>Web development involves creating and maintaining websites or web applications.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Graphics Designing</h3>
+        <p>Graphic design is the creative process of visually communicating ideas.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>YouTube Marketing</h3>
+        <p>YouTube marketing involves promoting products, services, or content on the platform.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Email Marketing</h3>
+        <p>Email marketing is a targeted approach to reach and engage audiences through email.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Social Media Page Handling</h3>
+        <p>Creating and curating content to engage audiences and build brand presence.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <h3>SMS Marketing</h3>
+        <p>SMS marketing delivers concise and targeted messages directly to users’ phones.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Social Media Marketing</h3>
+        <p>Promoting brands on Facebook, Instagram, and Twitter to boost engagement.</p>
+      </div>
+      <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+        <h3>Coding For Kids</h3>
+        <p>Interactive coding for kids fosters creativity and logical thinking.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="contact-info" id="contact">
+    <h2>Contact Information</h2>
+    <p>📞 Phone: +91 9905879870</p>
+    <p>✉️ Email: <a href="mailto:info@apexplanet.in">info@apexplanet.in</a></p>
+  </footer>
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
